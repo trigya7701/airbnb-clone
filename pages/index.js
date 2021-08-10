@@ -81,7 +81,7 @@ export default function Home({exploreData,cardsData}) {
       <Footer />
       <div className="bg-gray-100 px-32 py-5">
          <hr />
-          <h2>© 2021 Trigya Roy</h2>
+          <h3>© 2021 Trigya Roy</h3>
       </div>
       
     </div>
