@@ -17,7 +17,9 @@ export default function Home({exploreData,cardsData}) {
     <div className="">
       <Head>
         <title>Airbnb Clone</title>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/airbnb.png" /> */}
+        <link rel="shortcut icon" href="/favicon.ico" />
+       
       </Head>
       {/* Header */}
       <Header />

@@ -46,7 +46,7 @@ const Header = ({placeholder}) => {
                 layout="fill"
                 objectFit="contain"
                 objectPosition="left"
-                className="hover:animate-bounce"
+                className="animate-pulse"
                 />
             </div>
 
@@ -64,7 +64,7 @@ const Header = ({placeholder}) => {
             {/* right */}
             <div className="flex items-center space-x-4 justify-end text-gray-500">
                 <p className="hidden md:inline-flex cursor-pointer">Become a host</p>
-                <GlobeAltIcon className="h-6 cursor-pointer"/>
+                <GlobeAltIcon className="h-6 cursor-pointer animate-spin"/>
 
                 <div className="flex items-center space-x-2 border-2 p-2 cursor-pointer rounded-full">
                     <MenuIcon className="h-6"/>

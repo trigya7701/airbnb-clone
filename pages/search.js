@@ -3,6 +3,7 @@ import { useRouter } from "next/dist/client/router"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import InfoCarfd from "../components/InfoCarfd";
+import Map from "../components/Map";
 
 const Search = ({searchResults}) => {
     const router=useRouter();
@@ -31,7 +32,7 @@ const Search = ({searchResults}) => {
                     {searchResults.map(({img,location,title,description,star,price,
                             total})=>(
                         <InfoCarfd 
-                        key={location}
+                        key={star}
                         img={img}
                         location={location}
                         title={title}
@@ -44,6 +45,10 @@ const Search = ({searchResults}) => {
                     ))}
                     </div>
                    
+                </section>
+
+                <section className="hidden xl:inline-flex xl:min-w-[600px]">
+                    <Map className="absolute top-0 bottom-0 w-100" searchResults={searchResults}/>
                 </section>
 
             </main>
