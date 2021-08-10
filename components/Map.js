@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
 import { getCenter } from 'geolib';
-import 'mapbox-gl/dist/mapbox-gl.css';
+
 const Map = ({searchResults}) => {
 
   const [selectedLocation,setSelectedLocation]=useState({});
@@ -18,7 +18,7 @@ const Map = ({searchResults}) => {
       height:"100%",
       latitude: center.latitude,
     longitude: center.longitude,
-         zoom: 8
+         zoom: 11
     });
     return (
     <ReactMapGL
